@@ -40,7 +40,7 @@ species(n_s+2) = struct('name',"C6H12O",'intervals',[200 1000;1000 6000],'atoms'
 n_s = n_s + 2;
 
 if ~source
-    species = load('textbook_species.mat').speciesCopy;
+    species = load('data/textbook_species.mat').speciesCopy;
     n_s = length(species);
     
 end   

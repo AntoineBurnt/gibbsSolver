@@ -40,7 +40,7 @@ P_ref = 100000; %[Pa]
 %Identify reactants
 reactants = unique(horzcat(fuel,oxid),'stable');
 %% Species Data Initialization
-[species,atoms] = speciesLoader('species.dat',reactants,source);
+[species,atoms] = speciesLoader('data/species.dat',reactants,source);
 
 n_a = length(atoms);
 atoms_dict = dictionary(atoms,1:n_a);
